@@ -25,7 +25,7 @@ export default function Dictionary() {
     <>
       <form
         onSubmit={search}
-        className="flex flex-row gap-4 mb-6 justify-center"
+        className="flex flex-row gap-4 mb-6 justify-center md:mb-8"
       >
         <input
           type="search"

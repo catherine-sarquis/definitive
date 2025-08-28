@@ -7,7 +7,7 @@ export default function Results(props) {
         <h2 className="text-2xl font-[700] text-indigo-600 text-center">
           {props.results.word}
         </h2>
-        <h3 className="text-xl tracking-wider mb-4 text-center">
+        <h3 className="text-xl tracking-wider mb-4 text-center md:mb-8">
           /{props.results.phonetic}/
         </h3>
         <div>
