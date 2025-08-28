@@ -8,7 +8,7 @@ export default function Meaning(props) {
       <p>
         <em>{props.meaning.example}</em>
       </p>
-      <Synonyms synonyms={props.meanings} />
+      <Synonyms synonyms={props.meaning.synonyms} />
     </>
   );
 }

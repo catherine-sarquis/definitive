@@ -2,9 +2,9 @@ export default function Synonyms(props) {
   console.log(props.synonyms);
   if (props.synonyms) {
     return (
-      <div className="Synonyms">
+      <div>
         {props.synonyms.map(function (synonym, index) {
-          return <span key={index}>{synonym}&nbsp;</span>;
+          return <span key={index}>{synonym}</span>;
         })}
       </div>
     );
