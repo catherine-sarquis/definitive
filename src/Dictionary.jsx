@@ -31,8 +31,9 @@ export default function Dictionary() {
           type="search"
           name="search"
           id="search"
+          placeholder="Search for a word"
           autoFocus
-          className="border border-indigo-600 p-2 rounded-sm"
+          className="border border-indigo-600 p-2 rounded-sm focus:outline-2 focus:outline-indigo-600"
           onChange={handleKeywordChange}
         />
         <button

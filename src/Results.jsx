@@ -22,6 +22,6 @@ export default function Results(props) {
       </>
     );
   } else {
-    return <div>Sorry, we have not information about that word.</div>;
+    return null;
   }
 }
