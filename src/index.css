@@ -1,1 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,87.5,100..900;0,100,100..900;1,87.5,100..900;1,100,100..900&display=swap');
 @import "tailwindcss";
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.semiCondensed {
+  font-variation-settings:
+    "wdth" 87.5;
+  font-weight: 350;
+  font-size: 0.85rem;
+}

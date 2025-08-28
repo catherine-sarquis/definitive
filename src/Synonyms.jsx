@@ -2,15 +2,18 @@ export default function Synonyms(props) {
   console.log(props.synonyms);
   if (props.synonyms) {
     return (
-      <ul className="flex flex-row">
+      <div className="flex flex-wrap w-full gap-y-2 gap-x-4">
         {props.synonyms.map(function (synonym, index) {
           return (
-            <li key={index} className="mr-6">
+            <p
+              key={index}
+              className="semiCondensed py-1 px-2 border rounded-sm border-indigo-600 text-indigo-600"
+            >
               {synonym}
-            </li>
+            </p>
           );
         })}
-      </ul>
+      </div>
     );
   } else {
     return null;
