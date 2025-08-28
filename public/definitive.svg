@@ -5,9 +5,9 @@
     dominant-baseline="middle"
     text-anchor="middle"
     font-family="Arial, sans-serif"
-    font-size="90"
-    font-weight="bold"
-    fill="#4f46e5">
+    font-size="85"
+    font-weight="900"
+    fill="#ffffffff">
     D
   </text>
 </svg>
