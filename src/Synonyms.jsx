@@ -2,11 +2,15 @@ export default function Synonyms(props) {
   console.log(props.synonyms);
   if (props.synonyms) {
     return (
-      <div>
+      <ul className="flex flex-row">
         {props.synonyms.map(function (synonym, index) {
-          return <span key={index}>{synonym}</span>;
+          return (
+            <li key={index} className="mr-6">
+              {synonym}
+            </li>
+          );
         })}
-      </div>
+      </ul>
     );
   } else {
     return null;
