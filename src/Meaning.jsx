@@ -1,3 +1,5 @@
+import Synonyms from "./Synonyms";
+
 export default function Meaning(props) {
   return (
     <>
@@ -6,6 +8,7 @@ export default function Meaning(props) {
       <p>
         <em>{props.meaning.example}</em>
       </p>
+      <Synonyms synonyms={props.meanings} />
     </>
   );
 }
