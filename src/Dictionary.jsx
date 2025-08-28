@@ -23,16 +23,24 @@ export default function Dictionary() {
 
   return (
     <>
-      <form onSubmit={search}>
+      <form
+        onSubmit={search}
+        className="flex flex-row gap-4 mb-6 justify-center"
+      >
         <input
           type="search"
           name="search"
           id="search"
           autoFocus
-          className="border"
+          className="border border-indigo-600 p-2 rounded-sm"
           onChange={handleKeywordChange}
         />
-        <button type="submit">Search</button>
+        <button
+          type="submit"
+          className="rounded-sm bg-indigo-600 text-white px-4 py-2"
+        >
+          Search
+        </button>
       </form>
       <Results results={results} />
     </>
