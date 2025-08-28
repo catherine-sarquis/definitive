@@ -1,20 +1,37 @@
 import { useState } from "react";
 import Results from "./Results";
+import Images from "./Images";
 import axios from "axios";
 
 export default function Dictionary() {
   const [keyword, setkeyword] = useState(null);
   const [results, setResults] = useState(null);
+  const [images, setImages] = useState(null);
 
-  function handleResponse(response) {
+  function handleDictionaryResponses(response) {
     setResults(response.data);
+  }
+
+  function handleImageApiResponse(response) {
+    setImages(response.data);
   }
 
   function search(event) {
     event.preventDefault();
-    const apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=c3ae07f646b904bce9d83oat69c5764d`;
+    const dictionaryApiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=c3ae07f646b904bce9d83oat69c5764d`;
+    const imageApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=c3ae07f646b904bce9d83oat69c5764d`;
 
-    axios.get(apiUrl).then(handleResponse);
+    axios
+      .all([axios.get(dictionaryApiUrl), axios.get(imageApiUrl)])
+      .then(
+        axios.spread((dictionaryResponse, imageResponse) => {
+          handleDictionaryResponses(dictionaryResponse);
+          handleImageApiResponse(imageResponse);
+        })
+      )
+      .catch((error) => {
+        console.error("An error occurred:", error);
+      });
   }
 
   function handleKeywordChange(event) {
@@ -44,6 +61,7 @@ export default function Dictionary() {
         </button>
       </form>
       <Results results={results} />
+      <Images images={images} />
     </>
   );
 }

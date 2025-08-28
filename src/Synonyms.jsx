@@ -1,8 +1,7 @@
 export default function Synonyms(props) {
-  console.log(props.synonyms);
   if (props.synonyms) {
     return (
-      <div className="flex flex-wrap w-full gap-y-2 gap-x-4">
+      <div className="flex flex-wrap w-full gap-y-2 gap-x-4 ">
         {props.synonyms.map(function (synonym, index) {
           return (
             <p
