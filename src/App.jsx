@@ -1,5 +1,6 @@
 import Footer from "./Footer";
 import Dictionary from "./Dictionary";
+
 import "./App.css";
 
 function App() {
