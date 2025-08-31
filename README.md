@@ -1,12 +1,18 @@
-# React + Vite
+# Definitive.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repo for **Definitive.** Definitive. is an intuitive, no-fuss dictionary tool to look up English words of your choice. 
 
-Currently, two official plugins are available:
+I designed Definitive. to have a minimalist design that allows the user to focus on reading the content. Tailwind CSS worked well for implmenting the clean design to the components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live demo: [https://definitive.netlify.app/](https://definitive.netlify.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Core Technologies & Libraries
+
+| Category              | Technology / Library | 
+| --------------------- | -------------------- |
+| **Core Framework**    | React (v18)          | 
+| **API Communication** | Axios                | 
+| **Styling**           | TailwindCSS          |
+| **Development**       | Vite                 | 
